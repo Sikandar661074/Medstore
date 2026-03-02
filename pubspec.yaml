@@ -1,0 +1,46 @@
+name: medstore_app
+description: MedStore Manager - Medical Store Management App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # Notifications & Background
+  flutter_local_notifications: ^17.2.2
+  workmanager: ^0.9.0+3
+
+  # Storage & Utils
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.1
+  file_picker: ^8.1.2
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
